@@ -20,6 +20,13 @@ Your site will now have a banner targeted only to users within Russia.
 
 See what it looks like for yourself [here](https://www.abefehr.com/ukraine-info-banner/?ua-info-banner=true)
 
+In English, the text in the overlay reads:
+
+> **Russia invades Ukraine**
+> The war is being waged against your Ukrainian brothers and has claimed many victims.
+> Your government is hiding the truth from you.
+> Please spread the word.
+
 ## Testing
 
 If you'd like to see the banner for yourself, just add a query param to your site to preview it:
