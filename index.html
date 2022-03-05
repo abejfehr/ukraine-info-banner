@@ -83,6 +83,10 @@
     </main>
     <script src="dist/snippet.js"></script>
     <script>
+      function isTouchDevice() {
+        return window.ontouchstart !== undefined;
+      }
+
       if (!window.ua_info_banner) {
         // Hide the demo label + arrow
         document.querySelector(".banner-demo-label").style.display = "none";
@@ -93,6 +97,12 @@
           '<p>Check out a demo of it <a href="?ua-info-banner=true">here</a></p>';
 
         document.querySelector("article").append(p);
+      } else {
+        // Do a quick check to see if it's a touchscreen device and tailor the text if so
+        if (isTouchDevice()) {
+          document.querySelector(".banner-demo-label__text").innerHTML =
+            "Tap this banner to<br />see the overlay";
+        }
       }
     </script>
   </body>
