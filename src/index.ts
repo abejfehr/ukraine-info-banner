@@ -50,7 +50,7 @@ const createBanner = () => {
   banner.style.backgroundColor = "purple";
 
   const bannerLink = document.createElement("button");
-  bannerLink.innerHTML = "Россия вторглась в Украину";
+  bannerLink.innerHTML = "Россия вторгается в Украину";
   bannerLink.style.color = "white";
   bannerLink.style.margin = "0";
   bannerLink.style.background = "none";
@@ -74,10 +74,10 @@ const createBanner = () => {
     );
 
     overlay.innerHTML = `
-<h2>Россия вторглась в Украину</h2>
-<p>война ведется с вашими украинскими братьями и унесла много жертв.</p>
-<p>правда скрывается от вас вашим правительством.</p>
-<p>пожалуйста, распространяйте информацию и помогайте спасать жизни.</p>
+<h2>Россия вторгается в Украину
+<p>Война ведется против ваших украинских братьев и унесла много жертв.
+<p>Правду скрывает от вас ваше правительство.
+<p>Пожалуйста, распространите информацию.
     `;
     overlay.prepend(overlayCloseButton);
     document.body.append(overlay);
