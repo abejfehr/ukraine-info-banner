@@ -83,7 +83,15 @@
     <script src="dist/snippet.js"></script>
     <script>
       if (!window.ua_info_banner) {
+        // Hide the demo label + arrow
         document.querySelector(".banner-demo-label").style.display = "none";
+
+        // Add a paragraph with a link to the demo
+        const p = document.createElement("p");
+        p.innerHTML =
+          '<p>Check out a demo of it <a href="?ua-info-banner=true">here</a></p>';
+
+        document.querySelector("article").append(p);
       }
     </script>
   </body>
