@@ -1,4 +1,4 @@
-const TEST_QUERY_STRING = "ua-info-snippet";
+const TEST_QUERY_STRING = "ua-info-banner";
 
 const getQueryString = (key: string) => {
   var query = window.location.search.substring(1);

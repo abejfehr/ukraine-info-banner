@@ -16,14 +16,14 @@ Just add this script tag to your website
 
 Your site will now have a banner targeted only to users within Russia.
 
-## Preview
+## Demo site
 
-The site injects a banner that looks like this:
+See what it looks like for yourself [here](https://www.abefehr.com/ukraine-info-banner/?ua-info-banner=true)
 
-![image](https://user-images.githubusercontent.com/3917428/156888699-a26694b9-e1a4-482e-b47a-c88eeb5a2577.png)
+## Testing
 
 If you'd like to see the banner for yourself, just add a query param to your site to preview it:
 
 ```bash
-http://www.yoursitedomain.com?ua-info-snippet=true
+http://www.yoursitedomain.com?ua-info-banner=true
 ```
