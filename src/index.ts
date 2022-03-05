@@ -87,6 +87,9 @@ const createBanner = () => {
 
   banner.append(bannerBtn);
   document.body.prepend(banner);
+
+  // @ts-ignore setting a property on window
+  window.ua_info_banner = true;
 };
 
 if (uaInfoTarget()) {

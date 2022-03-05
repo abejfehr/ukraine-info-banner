@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ukraine Info Snippet</title>
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Alice&family=Caveat&family=Roboto&display=swap");
 
       html {
         font-family: sans-serif;
@@ -14,6 +14,16 @@
       main {
         position: relative;
         padding: 60px;
+        font-family: "Roboto", sans-serif;
+      }
+
+      article {
+        max-width: 500px;
+      }
+
+      h1 {
+        font-family: "Alice", serif;
+        font-size: 48px;
       }
 
       .banner-demo-label {
@@ -32,19 +42,21 @@
   </head>
   <body>
     <main>
-      <h1>Ukraine Info Banner</h1>
-      <p>
-        An embeddable banner with information about the situation in Ukraine
-        designed for a Russian Audience
-      </p>
-      <p>
-        I recently learned that many people in Russia have no idea what's
-        happening in Ukraine right now.
-      </p>
-      <p>
-        If your site reaches an audience in Russia, you can help change that by
-        including this snippet that adds information about the invasion.
-      </p>
+      <article>
+        <h1>Ukraine Info Banner</h1>
+        <p>
+          An embeddable banner with information about the situation in Ukraine
+          designed for a Russian Audience
+        </p>
+        <p>
+          I recently learned that many people in Russia have no idea what's
+          happening in Ukraine right now.
+        </p>
+        <p>
+          If your site reaches an audience in Russia, you can help change that
+          by including this snippet that adds information about the invasion.
+        </p>
+      </article>
       <aside class="banner-demo-label">
         <svg xmlns="http://www.w3.org/2000/svg" width="85" height="50">
           <g
@@ -69,5 +81,10 @@
       </aside>
     </main>
     <script src="dist/snippet.js"></script>
+    <script>
+      if (!window.ua_info_banner) {
+        document.querySelector(".banner-demo-label").style.display = "none";
+      }
+    </script>
   </body>
 </html>
