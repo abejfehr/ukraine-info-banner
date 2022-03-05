@@ -8,7 +8,7 @@ If your site reaches an audience in Russia, you can help change that by includin
 
 ## Getting Started
 
-Just add this script tag to your website
+Just add this script tag to your website:
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/abejfehr/ukraine-info-banner@latest/dist/snippet.js"></script>
@@ -18,13 +18,13 @@ Your site will now have a banner targeted only to users within Russia.
 
 ## Demo site
 
-See what it looks like for yourself [here](https://www.abefehr.com/ukraine-info-banner/?ua-info-banner=true)
+See what it looks like for yourself [here].(https://www.abefehr.com/ukraine-info-banner/?ua-info-banner=true)
 
 In English, the text in the overlay reads:
 
 > **Russia invades Ukraine**
 >
-> The war is being waged against your Ukrainian brothers and has claimed many victims.
+> War is being waged against your Ukrainian brothers and has claimed many victims.
 >
 > Your government is hiding the truth from you.
 >

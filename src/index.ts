@@ -88,7 +88,10 @@ const createBanner = () => {
 
     overlay.innerHTML = `
 <div style="text-align: center">
-<style>.ua-info-banner { all: revert; } .ua-info-banner__btn:hover, .ua-info-banner__btn:focus { color: blue; }</style>
+<style>
+.ua-info-banner { all: initial; font-family: sans-serif }
+.ua-info-banner__btn:hover, .ua-info-banner__btn:focus { color: blue; }
+</style>
 <h2>Россия вторгается в Украину</h2>
 <p>Продолжающаяся война против ваших украинских братьев унесла много жертв.
 <p>Правду скрывает от вас ваше правительство.
