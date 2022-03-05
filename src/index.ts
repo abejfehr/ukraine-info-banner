@@ -70,16 +70,25 @@ const createBanner = () => {
     overlay.style.backgroundColor = "white";
 
     const overlayCloseBtn = document.createElement("button");
-    overlayCloseBtn.innerHTML = "выхода";
+    overlayCloseBtn.style.position = "absolute";
+    overlayCloseBtn.style.top = "5px";
+    overlayCloseBtn.style.right = "5px";
+    overlayCloseBtn.style.border = "none";
+    overlayCloseBtn.style.background = "transparent";
+    overlayCloseBtn.style.verticalAlign = "middle";
+    overlayCloseBtn.title = "выхода";
+    overlayCloseBtn.innerHTML = '<span style="font-size: 48px">×</span>';
     overlayCloseBtn.addEventListener("click", () =>
       document.body.removeChild(overlay)
     );
 
     overlay.innerHTML = `
-<h2>Россия вторгается в Украину
+<div style="text-align: center">
+<h2>Россия вторгается в Украину</h2>
 <p>Война ведется против ваших украинских братьев и унесла много жертв.
 <p>Правду скрывает от вас ваше правительство.
 <p>Пожалуйста, распространите информацию.
+</div>
     `;
     overlay.prepend(overlayCloseBtn);
     document.body.append(overlay);
