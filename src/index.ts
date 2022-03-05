@@ -67,15 +67,18 @@ const createBanner = () => {
     overlay.style.left = "0";
     overlay.style.bottom = "0";
     overlay.style.right = "0";
+    overlay.style.padding = "30px";
     overlay.style.backgroundColor = "white";
 
     const overlayCloseBtn = document.createElement("button");
+    overlayCloseBtn.classList.add("ua-info-banner__btn");
     overlayCloseBtn.style.position = "absolute";
     overlayCloseBtn.style.top = "5px";
-    overlayCloseBtn.style.right = "5px";
+    overlayCloseBtn.style.right = "18px";
     overlayCloseBtn.style.border = "none";
     overlayCloseBtn.style.background = "transparent";
     overlayCloseBtn.style.verticalAlign = "middle";
+    overlayCloseBtn.style.cursor = "pointer";
     overlayCloseBtn.title = "выхода";
     overlayCloseBtn.innerHTML = '<span style="font-size: 48px">×</span>';
     overlayCloseBtn.addEventListener("click", () =>
@@ -84,6 +87,7 @@ const createBanner = () => {
 
     overlay.innerHTML = `
 <div style="text-align: center">
+<style>.ua-info-banner__btn:hover, .ua-info-banner__btn:focus { color: blue; }</style>
 <h2>Россия вторгается в Украину</h2>
 <p>Война ведется против ваших украинских братьев и унесла много жертв.
 <p>Правду скрывает от вас ваше правительство.
