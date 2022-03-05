@@ -20,6 +20,8 @@ Your site will now have a banner targeted only to users within Russia.
 
 The site injects a banner that looks like this:
 
+![image](https://user-images.githubusercontent.com/3917428/156888699-a26694b9-e1a4-482e-b47a-c88eeb5a2577.png)
+
 If you'd like to see the banner and its for yourself, just add a query param to your site to preview it:
 
 ```bash
