@@ -62,6 +62,7 @@ const createBanner = () => {
 
   bannerBtn.addEventListener("click", () => {
     const overlay = document.createElement("div");
+    overlay.classList.add("ua-info-banner");
     overlay.style.position = "fixed";
     overlay.style.top = "0";
     overlay.style.left = "0";
@@ -87,7 +88,7 @@ const createBanner = () => {
 
     overlay.innerHTML = `
 <div style="text-align: center">
-<style>.ua-info-banner__btn:hover, .ua-info-banner__btn:focus { color: blue; }</style>
+<style>.ua-info-banner { all: revert; } .ua-info-banner__btn:hover, .ua-info-banner__btn:focus { color: blue; }</style>
 <h2>Россия вторгается в Украину</h2>
 <p>Продолжающаяся война против ваших украинских братьев унесла много жертв.
 <p>Правду скрывает от вас ваше правительство.
