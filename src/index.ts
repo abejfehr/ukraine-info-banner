@@ -51,12 +51,13 @@ const createBanner = () => {
 
   const bannerBtn = document.createElement("button");
   bannerBtn.innerHTML =
-    '🇷🇺 <span style="text-decoration: underline;">Россия вторгается в Украину</span> 🇺🇦';
+    '🇷🇺&nbsp;&nbsp;<span style="text-decoration: underline;">Россия вторгается в Украину</span>&nbsp;&nbsp;🇺🇦';
   bannerBtn.style.color = "#E8E9EB";
   bannerBtn.style.margin = "0";
   bannerBtn.style.width = "100%";
   bannerBtn.style.background = "none";
   bannerBtn.style.border = "none";
+  bannerBtn.style.fontWeight = "bold";
   bannerBtn.style.cursor = "pointer";
 
   bannerBtn.addEventListener("click", () => {

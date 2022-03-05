@@ -4,21 +4,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ukraine Info Snippet</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+
+      html {
+        font-family: sans-serif;
+      }
+
+      main {
+        position: relative;
+        padding: 60px;
+      }
+
+      .banner-demo-label {
+        position: absolute;
+        left: 46%;
+        top: 10px;
+        text-align: center;
+        transform: translate(-50%);
+        font-family: "Caveat", cursive;
+      }
+
+      .banner-demo-label__text {
+        font-size: 22px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Ukraine Info Snippet</h1>
-    <p>
-      An embeddable snippet with information about the situation in Ukraine
-      designed for a Russian Audience
-    </p>
-    <p>
-      I recently learned that many people in Russia have no idea what's
-      happening in Ukraine right now.
-    </p>
-    <p>
-      If your site reaches an audience in Russia, you can help change that by
-      including this snippet that adds information about the invasion.
-    </p>
+    <main>
+      <h1>Ukraine Info Banner</h1>
+      <p>
+        An embeddable banner with information about the situation in Ukraine
+        designed for a Russian Audience
+      </p>
+      <p>
+        I recently learned that many people in Russia have no idea what's
+        happening in Ukraine right now.
+      </p>
+      <p>
+        If your site reaches an audience in Russia, you can help change that by
+        including this snippet that adds information about the invasion.
+      </p>
+      <aside class="banner-demo-label">
+        <svg xmlns="http://www.w3.org/2000/svg" width="85" height="50">
+          <g
+            fill="none"
+            stroke="#000"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-miterlimit="10"
+          >
+            <path
+              d="M2.012 47.458c2.254-15.748 7.447-21.81 23.566-21.434 22.829.533 36.483-4.221 53.935-19.566"
+            />
+            <path
+              d="M80.435 14.297c-.592-4.348 2.294-7.566 2.554-11.755-2.997 1.132-9.175 3.154-12.46 2.399"
+            />
+          </g>
+        </svg>
+        <div class="banner-demo-label__text">
+          Click this banner to<br />see the informative overlay
+        </div>
+      </aside>
+    </main>
     <script src="dist/snippet.js"></script>
   </body>
 </html>
