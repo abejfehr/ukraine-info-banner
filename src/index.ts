@@ -73,14 +73,13 @@ const createBanner = () => {
       document.body.removeChild(overlay)
     );
 
-    const overlayFrame = document.createElement("iframe");
-    overlayFrame.src = "/dist/content.html";
-    overlayFrame.style.width = "100%";
-    overlayFrame.style.height = "100%";
-    overlayFrame.style.border = "none";
-
-    overlay.append(overlayCloseButton);
-    overlay.append(overlayFrame);
+    overlay.innerHTML = `
+<h2>Россия вторглась в Украину</h2>
+<p>война ведется с вашими украинскими братьями и унесла много жертв.</p>
+<p>правда скрывается от вас вашим правительством.</p>
+<p>пожалуйста, распространяйте информацию и помогайте спасать жизни.</p>
+    `;
+    overlay.prepend(overlayCloseButton);
     document.body.append(overlay);
   });
 

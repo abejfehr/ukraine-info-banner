@@ -10,8 +10,8 @@ If your site reaches an audience in Russia, you can help change that by includin
 
 Just add this script tag to your website
 
-```
-<script src="githubusercontent.com/abejfehr/ukraine-snippet/main/script.js"></script>
+```html
+<script src="https://raw.githubusercontent.com/abejfehr/ukraine-snippet/main/dist/snippet.js"></script>
 ```
 
 Your site will now have a banner targeted only to users within Russia.
@@ -22,6 +22,6 @@ The site injects a banner that looks like this:
 
 If you'd like to see the banner and its for yourself, just add a query param to your site to preview it:
 
-```
-www.yoursitedomain.com?ua-info-snippet=true
+```bash
+http://www.yoursitedomain.com?ua-info-snippet=true
 ```
