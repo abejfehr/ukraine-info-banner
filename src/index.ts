@@ -46,19 +46,20 @@ const createBanner = () => {
   banner.style.width = "100vw";
   banner.style.margin = `-${getComputedStyle(document.body).margin}`;
   banner.style.textAlign = "center";
-  banner.style.padding = "2px";
-  banner.style.backgroundColor = "purple";
+  banner.style.padding = "4px 0 8px 0";
+  banner.style.backgroundColor = "#313638";
 
-  const bannerLink = document.createElement("button");
-  bannerLink.innerHTML = "Россия вторгается в Украину";
-  bannerLink.style.color = "white";
-  bannerLink.style.margin = "0";
-  bannerLink.style.background = "none";
-  bannerLink.style.border = "none";
-  bannerLink.style.textDecoration = "underline";
-  bannerLink.style.cursor = "pointer";
+  const bannerBtn = document.createElement("button");
+  bannerBtn.innerHTML =
+    '🇷🇺 <span style="text-decoration: underline;">Россия вторгается в Украину</span> 🇺🇦';
+  bannerBtn.style.color = "#E8E9EB";
+  bannerBtn.style.margin = "0";
+  bannerBtn.style.width = "100%";
+  bannerBtn.style.background = "none";
+  bannerBtn.style.border = "none";
+  bannerBtn.style.cursor = "pointer";
 
-  bannerLink.addEventListener("click", () => {
+  bannerBtn.addEventListener("click", () => {
     const overlay = document.createElement("div");
     overlay.style.position = "fixed";
     overlay.style.top = "0";
@@ -67,9 +68,9 @@ const createBanner = () => {
     overlay.style.right = "0";
     overlay.style.backgroundColor = "white";
 
-    const overlayCloseButton = document.createElement("button");
-    overlayCloseButton.innerHTML = "выхода";
-    overlayCloseButton.addEventListener("click", () =>
+    const overlayCloseBtn = document.createElement("button");
+    overlayCloseBtn.innerHTML = "выхода";
+    overlayCloseBtn.addEventListener("click", () =>
       document.body.removeChild(overlay)
     );
 
@@ -79,11 +80,11 @@ const createBanner = () => {
 <p>Правду скрывает от вас ваше правительство.
 <p>Пожалуйста, распространите информацию.
     `;
-    overlay.prepend(overlayCloseButton);
+    overlay.prepend(overlayCloseBtn);
     document.body.append(overlay);
   });
 
-  banner.append(bannerLink);
+  banner.append(bannerBtn);
   document.body.prepend(banner);
 };
 
