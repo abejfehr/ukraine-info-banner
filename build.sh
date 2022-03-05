@@ -1,0 +1,1 @@
+esbuild src/index.ts --bundle --minify --outfile=dist/snippet.js

@@ -1,0 +1,13 @@
+{
+  "name": "ukraine-site",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Abe Fehr <abe.fehr@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "./watch.sh"
+  },
+  "dependencies": {
+    "esbuild": "^0.14.25"
+  }
+}
