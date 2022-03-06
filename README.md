@@ -2,7 +2,8 @@
 
 > An embeddable banner with information about the situation in Ukraine designed for a Russian Audience
 
-![screenshot](https://user-images.githubusercontent.com/3917428/156927402-80b4f242-fca0-4208-8999-4357544976f4.png)
+![preview](https://user-images.githubusercontent.com/3917428/156927881-c4defb04-c401-449b-b39d-f131606b00f0.png)
+
 
 I recently learned that many people in Russia have no idea what's happening in Ukraine right now.
 
