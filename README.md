@@ -2,6 +2,8 @@
 
 > An embeddable banner with information about the situation in Ukraine designed for a Russian Audience
 
+![screenshot](https://user-images.githubusercontent.com/3917428/156927402-80b4f242-fca0-4208-8999-4357544976f4.png)
+
 I recently learned that many people in Russia have no idea what's happening in Ukraine right now.
 
 If your site reaches an audience in Russia, you can help change that by including this snippet that adds information about the invasion.
