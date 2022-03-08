@@ -20,7 +20,7 @@ Your site will now have a banner targeted only to users within Russia.
 
 ## Demo site
 
-See what it looks like for yourself [here].(https://www.abefehr.com/ukraine-info-banner/?ua-info-banner=true)
+See what it looks like for yourself [here](https://www.abefehr.com/ukraine-info-banner/?ua-info-banner=true).
 
 In English, the text in the overlay reads:
 
